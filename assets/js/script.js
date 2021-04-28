@@ -7,7 +7,7 @@ $(document).ready(function () {
     var value = $(this).siblings(".description").val();
     var time = $(this).parent().attr("id");
 
-    // save to local storage
+    // save to local storage. will appear after refresh still
     localStorage.setItem(time, value);
   });
 
@@ -21,7 +21,7 @@ $(document).ready(function () {
   $("#3after .description").val(localStorage.getItem("3after"));
   $("#4after .description").val(localStorage.getItem("4after"));
   $("#5after .description").val(localStorage.getItem("5after"));
-
+  // function to get current hour
   function currentTime() {
     var currentHour = moment().hours();
 
