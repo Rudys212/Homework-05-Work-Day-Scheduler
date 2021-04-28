@@ -10,7 +10,7 @@ This project is day planner where the user is able to enter their tasks for a si
 
 ---
 
-- User would enter tasks items into the description area of each time-block
+- User will enter tasks items into the description area of each time-block
 - Then press the button on the right side to save the task into the planner
 
 ![Day Planner Screenshot](./assets/images/screenshot.png)
@@ -21,4 +21,4 @@ This project is day planner where the user is able to enter their tasks for a si
 
 - [Deployed URL](https://rudys212.github.io/Homework-05-Work-Day-Scheduler/)
 
-- [GitHub URL](https://github.com/Rudys212)
+- [GitHub URL](https://github.com/Rudys212/Homework-05-Work-Day-Scheduler)

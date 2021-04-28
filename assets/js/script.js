@@ -10,7 +10,6 @@ $(document).ready(function () {
     // save to local storage. will appear after refresh still
     localStorage.setItem(time, value);
   });
-
   $("#8morn .description").val(localStorage.getItem("8morn"));
   $("#9morn .description").val(localStorage.getItem("9morn"));
   $("#10morn .description").val(localStorage.getItem("10morn"));
@@ -21,12 +20,14 @@ $(document).ready(function () {
   $("#3after .description").val(localStorage.getItem("3after"));
   $("#4after .description").val(localStorage.getItem("4after"));
   $("#5after .description").val(localStorage.getItem("5after"));
+
   // function to get current hour
   function currentTime() {
-    var currentHour = moment().hours();
+    var currentHour = moment().hour();
 
+    // goes through each time block and adds or remove present/future/past class
     $(".timeblocks").each(function () {
-      var blockTime = parseInt($(this).attr("id").split("hr")[1]);
+      var blockTime = parseInt($(this).attr("id"));
 
       if (blockTime < currentHour) {
         $(this).addClass("past");
